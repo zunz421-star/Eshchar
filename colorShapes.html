@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>משחק עיגולים נגד משולשים</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #container {
+      text-align: center;
+    }
+
+    canvas {
+      border: 2px solid #f59e0b;
+      border-radius: 16px;
+      background: #0f172a;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      cursor: crosshair;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-top: 8px;
+      color: #cbd5e1;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>משחק: עיגולים נגד משולשים</h1>
+    <canvas id="shapeCanvas" width="700" height="500"></canvas>
+    <p>לחץ על הלוח כדי לשגר עיגול חדש. העיגולים יתקפו את המשולשים, וכל חיסול נותן נקודות. שחק עד שהניצחון או שהמשולשים יתרסקו את הטורים.</p>
+  </div>
+
+  <script src="colorShapes.js"></script>
+</body>
+</html>
